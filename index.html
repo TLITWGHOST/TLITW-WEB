@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -259,9 +259,9 @@
         <div class="top-title">ᵀᴸᴵᵀᵂ</div>
         
         <div class="content-box">
-            <div class="label-top">چنل</div>
-            <a href="https://t.me/Arsham_Ghost_B" target="_blank" class="apple-button">چنل اونی که گفتم</a>
-            <div class="label-bottom">بزودی راه اندازی میشود</div>
+            <div class="label-top">Channel</div>
+            <a href="https://t.me/Arsham_Ghost_B" target="_blank" class="apple-button">Channel</a>
+            <div class="label-bottom">Coming Soon</div>
         </div>
     </div>
 
@@ -272,11 +272,11 @@
                 <img id="modalImg" src="" alt="Profile">
             </div>
             <div class="modal-info">
-                <h3 id="userName">کاربر مهمان</h3>
+                <h3 id="userName">Guest User</h3>
                 <p id="userUsername">@Guest</p>
                 <p id="userId">ID: ---</p>
             </div>
-            <button class="modal-close" onclick="toggleModal(false)">بستن</button>
+            <button class="modal-close" onclick="toggleModal(false)">Close</button>
         </div>
     </div>
 
@@ -297,8 +297,8 @@
                 if (tgUser) {
                     const firstName = tgUser.first_name || '';
                     const lastName = tgUser.last_name || '';
-                    const fullName = (firstName + ' ' + lastName).trim() || 'کاربر تلگرام';
-                    const username = tgUser.username ? '@' + tgUser.username : 'بدون آیدی';
+                    const fullName = (firstName + ' ' + lastName).trim() || 'Telegram User';
+                    const username = tgUser.username ? '@' + tgUser.username : 'No Username';
                     const id = tgUser.id || '---';
 
                     userNameElem.textContent = fullName;
